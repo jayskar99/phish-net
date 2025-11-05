@@ -1,0 +1,42 @@
+{
+  "message_id": "string",
+  "from": {
+    "name": "string",
+    "email": "string"
+  },
+  "reply_to": {
+    "name": "string",
+    "email": "string"
+  },
+  "to": ["email1@example.com", "email2@example.com"],
+  "subject": "string",
+  "date": "ISO_8601_timestamp",
+
+  "headers": {
+    "spf_pass": true,
+    "dkim_pass": true,
+    "dmarc_pass": true,
+    "received_paths": ["string", "string"]
+  },
+
+  "body": {
+    "text": "plain text version of the email",
+    "html": "raw html version of the email"
+  },
+
+  "links": [
+    {
+      "display_text": "string",
+      "url": "string",
+      "domain": "example.com"
+    }
+  ],
+
+  "attachments": [
+    {
+      "filename": "string",
+      "filetype": "string",
+      "size_bytes": 12345
+    }
+  ]
+}

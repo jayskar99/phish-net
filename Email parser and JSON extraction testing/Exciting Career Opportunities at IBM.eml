@@ -1,0 +1,362 @@
+Delivered-To: samartha.suresh@email.tamu.edu
+Received: by 2002:a05:7300:6429:b0:2a1:eebd:9c9c with SMTP id k41csp1132529dye;
+        Wed, 5 Nov 2025 04:30:35 -0800 (PST)
+X-Forwarded-Encrypted: i=2; AJvYcCVSMytaC2z0+z4ZNFdoxkDUkY+2MklRdbynORM3+K1PXr/3CGoG02OwdgneZHxBHc8XkUZGQLLm/Dh9cUysLNM=@email.tamu.edu
+X-Google-Smtp-Source: AGHT+IF7HJ3IOyBrvP/hA19Ygsn6FaToxYiUab7sjuiYCh3rgTOrG6YTnOIOuPUAvQRNoqbiJVFr
+X-Received: by 2002:a05:6214:e4e:b0:880:4d6e:1c44 with SMTP id 6a1803df08f44-8807109546amr39017776d6.14.1762345835533;
+        Wed, 05 Nov 2025 04:30:35 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1762345835; cv=none;
+        d=google.com; s=arc-20240605;
+        b=KEa5AUGpXWBJ9qxcY2hzrg8eLLpWf6AzvNBYOe3w8dq5XtNzTHShXRtUDK8EIfbWyf
+         5MZGTD6vKnSfsEEkiSRhV3t61pCoYnauxk9TJteNF5Jplb6WMgJplOfMtNzmtcEnZqdu
+         ERWk4Aex38u1hccW9qkX5tZLpzcQaGSOF+X32Hpkv62Eh3pt82pMGsjZiz43YqZbkDwi
+         m3L8NfPPjzkONPBHhnWxUjrBGGck15I9Oe4FWdHv2+AkfrlFHbPdDtVGqZpf7sI/ho7U
+         VmFudga92B6FrLD002wEp9i8DjusyvPMA6LJ2REgOvQ7+e4uTO/ASzVOgJ1HEA6rNoeO
+         oMtw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:to:subject:message-id:date:from:dkim-signature;
+        bh=0C11FxPIZHbXaVVebRFK19RHCtqc7eRgjWvaq+sB5nU=;
+        fh=8Q+MZ9I2oJr4Jj3QHB3YXHxBMJxj7OZ3yQ1vBFurJp4=;
+        b=bkhc34sF5IVSEmqaMtkT248CyqzEM7JtQaI4kUmhZWbGReHVCu/DbBR93Z4o4gG9Zu
+         s4uaS9MZh2BvKBLNRc8v0AQyBLgCa8GImU8wLl/0tNh2yuF9zKzBQgO5FNGeL77ZyeS/
+         jExp2Ke5kCgUa0++8HoDtfPF5Gacy0vLvj6dz4py7SrkYjGqU4e1OmIGnhYLEGdwodFR
+         Bhk/7Zr29vZ6Z9+iHC9EuESg09jboUMLXB3NnOB0REcTTRQsu3S1lM+TSXyyNvBMaqe0
+         TnHLKtIUgzvL5iTegUm+Ii6x0/f0naLFn3TcgMfkF5mJArc8m4PTXfqeR+NOWauiGmTj
+         L6eQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=neutral (body hash did not verify) header.i=@gmail.com header.s=20230601 header.b="KosL/Oo+";
+       spf=pass (google.com: domain of nanceroehiringibm@gmail.com designates 209.85.128.195 as permitted sender) smtp.mailfrom=nanceroehiringibm@gmail.com;
+       dara=fail header.i=@email.tamu.edu
+Return-Path: <nanceroehiringibm@gmail.com>
+Received: from mail-2p-in-a3.it.tamu.edu (mail-2p-in-a3.it.tamu.edu. [165.91.22.107])
+        by mx.google.com with ESMTPS id 6a1803df08f44-88036309a58si52348026d6.356.2025.11.05.04.30.35
+        for <samartha.suresh@email.tamu.edu>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 05 Nov 2025 04:30:35 -0800 (PST)
+Received-SPF: pass (google.com: domain of nanceroehiringibm@gmail.com designates 209.85.128.195 as permitted sender) client-ip=209.85.128.195;
+Authentication-Results: mx.google.com;
+       dkim=neutral (body hash did not verify) header.i=@gmail.com header.s=20230601 header.b="KosL/Oo+";
+       spf=pass (google.com: domain of nanceroehiringibm@gmail.com designates 209.85.128.195 as permitted sender) smtp.mailfrom=nanceroehiringibm@gmail.com;
+       dara=fail header.i=@email.tamu.edu
+Received: from mx0a-00178102.pphosted.com (mx0a-00178102.pphosted.com [148.163.135.245])
+	by mail-2p-in-a3.it.tamu.edu (Postfix) with ESMTPS id D9744869C6
+	for <samartha.suresh@tamu.edu>; Wed,  5 Nov 2025 06:30:34 -0600 (CST)
+Received: from pps.filterd (m0169867.ppops.net [127.0.0.1])
+	by mx0a-00178102.pphosted.com (8.18.1.11/8.18.1.11) with ESMTP id 5A5ApiAj1873784
+	for <samartha.suresh@tamu.edu>; Wed, 5 Nov 2025 06:30:34 -0600
+Authentication-Results: ppops.net;
+	spf=pass smtp.mailfrom=nanceroehiringibm@gmail.com;
+	dkim=pass header.s=20230601 header.d=gmail.com;
+	dmarc=pass header.from=gmail.com
+Received: from mail-yw1-f195.google.com (mail-yw1-f195.google.com [209.85.128.195])
+	by mx0a-00178102.pphosted.com (PPS) with ESMTPS id 4a7yb29jpx-1
+	(version=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 bits=128 verify=NOT)
+	for <samartha.suresh@tamu.edu>; Wed, 05 Nov 2025 06:30:33 -0600 (CST)
+Received: by mail-yw1-f195.google.com with SMTP id 00721157ae682-7866bca6765so32262797b3.1
+        for <samartha.suresh@tamu.edu>; Wed, 05 Nov 2025 04:30:33 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1762345833; x=1762950633; darn=tamu.edu;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=p5uc/pCCiSfVJzSBkczB/Xchucy6awRbszLk+dTUaZw=;
+        b=KosL/Oo+w+mC/qRtr5iwMPIgosrO+CELoWOHgug9071y1mhiYJVpu4xsjVIT8FkDwG
+         iuzb7MR81o1cAhOpa7gsYPoBVv0bIQbvZcobqOqdgB0GASY8rOxc44GPoadcM6vpMeoH
+         IV0HTwUGcWyopO++b/adbgtd5AsKiaqWBFPelUgpOQWXG2g0Mc9/KYumND5KsQDdz6HZ
+         +KrgFPAi7kxE4rO2chmnYg33iNg4vO7hb9iQ6G+F5X1VLng++60vL5312ALW925cMCjH
+         dV7Stt0SaTxqpFwqbxGST1p9h0QirwJqjJ6MRY2QIC4twNGkaSN5cxrMFdKZPC2xwoA3
+         /Lpg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1762345833; x=1762950633;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=p5uc/pCCiSfVJzSBkczB/Xchucy6awRbszLk+dTUaZw=;
+        b=JnjSkNPIlHN7HLxvOqkm28+Kce0DZ7FtJ8gXqTvzRvZBUYofgBQLEYvWxS8yAgSWgZ
+         hzJ2mlMz0Y/fD6vGM89ttwPo+Bb2wJJEuCjJ+fplSq64TSGd1cEfLqkhWf/gYrVvmydl
+         UEVh7cyz/JrIZdgy8X+I2hsYSGYQdo8RgtNQRf1gW9nmS0ipijmRxARBnPV8zS+8wyLK
+         GYQQaRGbUFmDI93tIRCvK2yiZwFenEfF64WbYs9+vybMzYM5p2E7DT+R6T4WvJoTJuOq
+         qLuoBwNULgewvYfRVpj/MH3a12wxrF/qmyiHAG592uDbiyl7XbF+jH0PVu/ZXGXIk+a/
+         xzCw==
+X-Forwarded-Encrypted: i=1; AJvYcCWLI4hklQUCn1lMW6E/ve+7WpMN/StF0glq7J1U8Ydasmsy6973Msl97YiasKlsppQjR8s3jgYELudO/vUPby0=@tamu.edu
+X-Gm-Message-State: AOJu0YxCbbuH9NUdmx7SmhScmlFyzLz47UOM4v3C8TzGkDbPvkUCyXNh
+	ZbnKR8h6XClr5XEIROWBch5ggS/8b0ZoWSUJEziyDo0zGByqfTJ67LjNXsquI1ooNgZSdBYnfii
+	iVXF55aBtRrbfDyVbK0oGvsT8Wn5CwtU=
+X-Gm-Gg: ASbGncv3oR9VHXmrtXCXDoq7oXIY1bAO5dvcWxOLVqGJqqNb853+yOicrsRiSbkOLJ7
+	vLziFQGguXMDY7pXJ1a+xqgg6qJ3g1o7liQeD0fnQXPxMo6nsSnsWLIU7y37d7kggga9XBCbCgB
+	wmQDLD4m5w0URlDtwbuIHlq5XieSZxbl+V6TuY1L5jdZyRAA7MF9Uko4HguU8RLMOjS6VsaU3C3
+	+BMD0/fbrpKX9Hjra4XsnioBRBl9KaLyM8OjuzRGMF++2JOQDuTob0YqpV+
+X-Received: by 2002:a05:690e:418e:b0:63f:9cef:d040 with SMTP id
+ 956f58d0204a3-63fd3571420mr2391430d50.45.1762345832880; Wed, 05 Nov 2025
+ 04:30:32 -0800 (PST)
+From: Nance Roe <nanceroehiringibm@gmail.com>
+Date: Wed, 5 Nov 2025 04:30:20 -0800
+X-Gm-Features: AWmQ_bmWHGG25fuY29P72ajBjAVtgYlbwqusbL0C_kIlsEvdlHZxJQ96EyT4rgo
+Message-ID: <CAEwo6RGsKxoAJ24VqsamXGp6Rfc5ZP1LM-8qGO_1++9sfhBjDA@mail.gmail.com>
+Subject: Exciting Career Opportunities at IBM
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000571e480642d81d06"
+X-Authority-Analysis: v=2.4 cv=KN9XzVFo c=1 sm=1 tr=0 ts=690b436a cx=c_pps
+ a=S6KF/BNFsuM6eC0Dy2oiAg==:117 a=6UeiqGixMTsA:10 a=x7bEGLp0ZPQA:10
+ a=THjuKlOw2l4A:10 a=95EFz5htlIgA:10 a=Kan8h273Bse8B8Jy5C1n:22
+ a=pGLkceISAAAA:8 a=VnNF1IyMAAAA:8 a=k-LPwkmk-mPGoXJfdKEA:9 a=QEXdDO2ut3YA:10
+ a=fys2sDa9AAAA:8 a=babsVOQnAAAA:20 a=iaXb7e3lJrKY-5CRBXUA:9
+ a=aF1I0HVobZ6kRtYf:21 a=lqcHg5cX4UMA:10 a=0CfZoOojiiVhkKQ2G3G_:22
+ a=cxvKBDLQBPt9UUSrbW9l:22 a=7YpECbvlQQReuXKdpsOb:22 a=GYOsYmWYlC3d7UKdFgpn:22
+ a=yGALpUAloaGyjeKaxgmO:22 a=nQGRH6BxOZssStQpuM-Q:22 a=yULaImgL6KKpOYXvFmjq:22
+ a=poXaRoVlC6wW9_mwW8W4:22 a=HhbK4dLum7pmb74im6QT:22 a=CTwFTDRtctY-zZ8oRDn3:22
+ a=ExB-INV0ayv11NAuUrFj:22 a=ubYqcyGMubyv50D_M79R:22 a=p-dnK0njbqwfn1k4-x12:22
+ a=rLkV7i5x5X597yo9dRWc:22
+X-CLX-Shades: MLX
+X-CLX-Response: 1TFkXExoRCkx6FxkfHxEKWUQXZkwYZF9mSUFAYEgRClhYF2ZAcG1QYRpHWVx
+ tEQp4ThdjU2NrexNYfhpfXhEKeUwXZ04ZH1NaZh5mT1gRCkNIFwcZEQpDWRcHGR4bEQpDSRcaBB
+ oaGhEKWU0XZ2ZyEQpfWRceHxMRCl9NF2dmchEKWUkXGx8ZcR4GHRx3BhsZHQYbGhpCGxkGGgYbG
+ hoGHRpxHhAadwYaBgcfGgYaBgcfGgYaBhpxGhAadwYaEQpZXhdsbHkRCklGF15LR191GHVCRVle
+ T04RCklHF3hPTREKQ04XTGUfB215QRlYQB58YBxreXsZW2QfTGAZWUVSZBpAe3URClhcFx8EGgQ
+ eGxoFGxoEGxoaBBsZHgQZHhAbHhofGhEKXlkXTXtlTWwRCk1cFxgfGxEKTFoXaX9pTWNrEQpFWR
+ dNEQpMXxd6BQUFBQUFBQUFZREKTEYXb2tra2trEQpCTxdoRXsBfE9Pf0kdRxEKQ1oXGBoTBBIfB
+ BsYEgQbEx8RCkJeFxsRCkReFxoRCkJcFxsRCl5OFxsRCkJLF2NTY2t7E1h+Gl9eEQpCSRdjU2Nr
+ exNYfhpfXhEKQkUXb2xrX3B+REloWnsRCkJOF2NTY2t7E1h+Gl9eEQpCTBdmQHBtUGEaR1lcbRE
+ KQmwXYkVaa1MFQF96Tx4RCkJAF2QTZh9GBV0aZGRbEQpCWBdpYW1FHBsbWX5NWhEKTV4XGxEKWl
+ gXExEKeUMXZHpzfkVTE2ZoeFoRCllLFxsbGh4YEQpwZxdoQn9dSx1IW1lnehAZGhEKcGgXaRkFW
+ XpZAXJQaW0QGhEKcGgXbxtwHkxGZmtieX0QGhEKcGgXbGJHYGxMcBxHG0wQGRoRCnBoF2NeYUgf
+ U35lWGkfEBkaEQpwaBdtR3p+SFBhHlwbExAZGhEKcGgXY1l8fl4da1NmEm8QGRoRCnBoF2Rzf2l
+ gWR5nTHlLEBkaEQpwaBdtG2kFfWlwbkVoTxAaEQpwfRdrb0kbGBlLXEBDbhAbGh4RCnB9F2RTQl
+ IbExhZexNvEBkaEQpwfRdhZENMZAVAYHxnYxAaEQpwfxdrWxNzWX4eYltYQRATHREKcF8XYkNDb
+ 1lNS11jeGcQGxoZEQpwfxdgeH1ofRMbAWEYRRAbGxIRCnBfF2FyaF5rHUJ6AU99EBsYGBEKcH8X
+ Y1NPbkxmcBhMHnoQHRMRCnBfF2YdaURGfxhDWXJMEBwTEQpwbBdgZ2ZFXmJwUF9kTxAZGhEKbX4
+ XGxEKWE0XSxEg
+X-Proofpoint-GUID: fO5-GSk3rj4VJ6ASQ3qN5fJ3soxN0jQ_
+X-Proofpoint-Spam-Details-Enc: AW1haW4tMjUxMTA1MDA5MyBTYWx0ZWRfX71rmE24xRPkQ
+ eP3Laz+dB+R61l7ZE8b8IynP4s7EzzCn3aawYs+DbHpKQ3rsa+3k3vn7DUOOT2z0mDy1gVNB77p
+ dWwv7VtqiE6nzvLby0LMmqiLeo0412NQSIanqCKBHtpk/AVhEnsZ4qKCQjS6d76mYUGj1IwBPdL
+ hFhSVWq2yPQouJFgV0gdIDFmR9CSS7V9BAmCnSbgkAE4Y85lZBzvp/gfAbo4EkxtGKtxYQsW/q7
+ 4y4Mk2UsIHpdD3aq48YGkgkQ7TvwJPJuNe4DKNQWgsaMJrsPx7a6EEHqazsFEo9NRDir8VdD8rC
+ wFzcu8RP2d0OSrkjtYe2hk7wZnd88uyLlev++KwlEbKFsSJM0eMgm/TBxxGTsDZdgHfPoZVQjHL
+ fYxH1YwFPGUY9HOTLCySmW1gg50eR12ynArPvV0sW+h84CuxPHK74NSPrSM10xHhG2U5q/bwVFD
+ D6i0q6h4n4LiAlK6fveUkfKntDrPktwV/nxEejRA=
+X-Proofpoint-ORIG-GUID: fO5-GSk3rj4VJ6ASQ3qN5fJ3soxN0jQ_
+MIME-Version: 1.0
+X-Proofpoint-Banner-Trigger: inbound
+X-Proofpoint-SPF-Result: pass
+X-Proofpoint-SPF-Record: v=spf1 redirect=_spf.google.com
+X-Proofpoint-DKIM-Result: pass
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.293,Aquarius:18.0.1121,Hydra:6.1.9,FMLib:17.12.100.49
+ definitions=2025-11-05_05,2025-11-03_03,2025-10-01_01
+X-Proofpoint-DMARC-Result: pass
+X-Proofpoint-DMARC-Record: v=DMARC1; p=none; sp=quarantine;
+ rua=mailto:mailauth-reports@google.com
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 adultscore=0
+ clxscore=90 impostorscore=0 priorityscore=355 unknownsenderscore=20
+ suspectscore=0 bulkscore=0 spamscore=0 malwarescore=0 phishscore=0
+ lowpriorityscore=0 classifier=typeunknown authscore=0 authtc= authcc=
+ route=inbound adjust=0 reason=mlx scancount=1 engine=8.22.0-2510240001
+ definitions=main-2511050093 domainage_hfrom=11042
+
+--000000000000571e480642d81d06
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+I recently came across your profile and was impressed by the experience and
+skills you=E2=80=99ve developed so far. At *IBM*, we=E2=80=99re in the mids=
+t of an exciting
+phase of innovation and growth, and we=E2=80=99re looking to connect with t=
+alented
+professionals who are ready to take their careers to the next level.
+
+Because our opportunities span across *technology, consulting, business
+strategy, and operations*, I=E2=80=99d love to learn more about your profes=
+sional
+interests. Understanding where you=E2=80=99d like to grow will help me iden=
+tify
+positions that not only align with your skills but also support your
+long-term aspirations.
+
+If you don=E2=80=99t mind sharing, I=E2=80=99d be interested to know:
+
+   -
+
+   What type of role excites you most at this stage of your career?
+   -
+
+   Do you see yourself more aligned with technical, client-facing, or
+   strategic paths?
+   -
+
+   Do you have a preference for work setup (on-site, hybrid, or remote)?
+
+Your insights will help me connect you with the right teams and
+opportunities here at IBM. With the innovation and transformation happening
+across our business, this could be a great time to explore what=E2=80=99s n=
+ext.
+
+Looking forward to hearing your thoughts.
+
+Best regards,
+*Nance Roe*
+Nance Roe
+*Recruiter,IBM*
+
+*nanceroehiringibm@gmail.com <nanceroehiringibm@gmail.com>*1-800-426-4968,
+https://urldefense.com/v3/__http://www.ibm.com__;!!KwNVnqRv!FoUQLDtDvd5xrLW=
+oOutmFDocGCRiyv6utDPeh1W9EH-682bw6qrH0Cb2t79tV4FJ5iTBbCBRvvUxTMV8OGFKwl4d1u=
+nW7Ys$ .
+1 New Orchard Rd, Armonk, NY 10504, USA
+
+--000000000000571e480642d81d06
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<head><!-- BaNnErBlUrFlE-HeAdEr-start -->
+<style>
+  #pfptBannerkjb2yvp { all: revert !important; display: block !important;
+    visibility: visible !important; opacity: 1 !important;
+    background-color: #d0d8dc !important;
+    max-width: none !important; max-height: none !important }
+  .pfptPrimaryButtonkjb2yvp:hover, .pfptPrimaryButtonkjb2yvp:focus {
+    background-color: #b4c1c7 !important; }
+  .pfptPrimaryButtonkjb2yvp:active {
+    background-color: #90a4ae !important; }
+  html:root, html:root>body { all: revert !important; display: block !impor=
+tant;
+    visibility: visible !important; opacity: 1 !important; }
+</style>
+
+<!-- BaNnErBlUrFlE-HeAdEr-end -->
+</head><!-- BaNnErBlUrFlE-BoDy-start -->
+<!-- Preheader Text : BEGIN -->
+<div style=3D"display:none !important;display:none;visibility:hidden;mso-hi=
+de:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;opacity:0=
+;overflow:hidden;">
+Hello, I recently came across your profile and was impressed by the experie=
+nce and skills you=E2=80=99ve developed so far. At IBM, we=E2=80=99re in th=
+e midst of an exciting phase of innovation and growth, and we=E2=80=99re lo=
+oking to connect with talented professionals</div>
+<!-- Preheader Text : END -->
+
+<!-- Email Banner : BEGIN -->
+<div style=3D"display:none !important;display:none;visibility:hidden;mso-hi=
+de:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;opacity:0=
+;overflow:hidden;">ZjQcmQRYFpfptBannerStart</div>
+
+<!--[if ((ie)|(mso))]>
+  <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" st=
+yle=3D"padding: 0px 0px 10px 0px; direction: ltr" lang=3D"en"><tr><td>
+    <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"paddin=
+g: 0px 8px 6px 8px; width: 100%; border-radius:4px; border-top:4px solid #9=
+0a4ae;background-color:#d0d8dc;"><tr><td valign=3D"top">
+      <table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" style=3D"padding: 0px 8px 4px 8px; font-size: 12px; line-height: 16px">
+	<tr><td style=3D"color:#000000; font-family: 'Arial', sans-serif; font-wei=
+ght:bold; font-size:14px; line-height: 20px; direction: ltr">
+	  This Message Is From an External Sender
+	</td></tr>
+	<tr><td style=3D"color:#000000; font-weight:normal; font-family: 'Arial', =
+sans-serif; font-size:12px; direction: ltr">
+          This message came from outside your organization.
+	</td></tr>
+
+      </table>
+
+    </td></tr></table>
+  </td></tr></table>
+<![endif]-->
+
+<![if !((ie)|(mso))]>
+  <div dir=3D"ltr" lang=3D"en" id=3D"pfptBannerkjb2yvp" style=3D"all: rever=
+t !important; display:block !important; text-align: left !important; margin=
+: 0 0 10px 0 !important; padding:7px 16px 8px 16px !important; border-radiu=
+s: 4px !important; min-width: 200px !important; background-color: #d0d8dc !=
+important; background-color: #d0d8dc; border-top: 4px solid #90a4ae !import=
+ant; border-top: 4px solid #90a4ae;">
+    <div id=3D"pfptBannerkjb2yvp" style=3D"all: unset !important; float:lef=
+t !important; display:block !important; margin: 1px 0 1px 0 !important; max=
+-width: 600px !important;">
+      <div id=3D"pfptBannerkjb2yvp" style=3D"all: unset !important; display=
+:block !important; visibility: visible !important; background-color: #d0d8d=
+c !important; color:#000000 !important; color:#000000; font-family: 'Arial'=
+, sans-serif !important; font-family: 'Arial', sans-serif; font-weight:bold=
+ !important; font-weight:bold; font-size:14px !important; line-height:1.29 =
+!important; line-height:1.29">
+	This Message Is From an External Sender
+      </div>
+      <div id=3D"pfptBannerkjb2yvp" style=3D"all: unset !important; display=
+:block !important; visibility: visible !important; background-color: #d0d8d=
+c !important; color:#000000 !important; color:#000000; font-weight:normal; =
+font-family: 'Arial', sans-serif !important; font-family: 'Arial', sans-ser=
+if; font-size:12px !important; line-height:1.5 !important; line-height:1.5;=
+ margin-top:2px !important;">
+This message came from outside your organization.
+      </div>
+
+    </div>
+
+    <div style=3D"clear: both !important; display: block !important; visibi=
+lity: hidden !important; line-height: 0 !important; font-size: 0.01px !impo=
+rtant; height: 0px">&nbsp;</div>
+  </div>
+<![endif]>
+
+<div style=3D"display:none !important;display:none;visibility:hidden;mso-hi=
+de:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;opacity:0=
+;overflow:hidden;">ZjQcmQRYFpfptBannerEnd</div>
+<!-- Email Banner : END -->
+
+<!-- BaNnErBlUrFlE-BoDy-end -->
+<div dir=3D"ltr"><div><p>Hello,</p>
+<p>I recently came across your profile and was impressed by the experience =
+and skills you=E2=80=99ve developed so far. At <strong>IBM</strong>, we=E2=
+=80=99re in the midst of an exciting phase of innovation and growth, and we=
+=E2=80=99re looking to connect with talented professionals who are ready to=
+ take their careers to the next level.</p>
+<p>Because our opportunities span across <strong>technology, consulting, bu=
+siness strategy, and operations</strong>, I=E2=80=99d love to learn more ab=
+out your professional interests. Understanding where you=E2=80=99d like to =
+grow will help me identify positions that not only align with your skills b=
+ut also support your long-term aspirations.</p>
+<p>If you don=E2=80=99t mind sharing, I=E2=80=99d be interested to know:</p>
+<ul>
+<li>
+<p>What type of role excites you most at this stage of your career?</p>
+</li>
+<li>
+<p>Do you see yourself more aligned with technical, client-facing, or strat=
+egic paths?</p>
+</li>
+<li>
+<p>Do you have a preference for work setup (on-site, hybrid, or remote)?</p>
+</li>
+</ul>
+<p>Your insights will help me connect you with the right teams and opportun=
+ities here at IBM. With the innovation and transformation happening across =
+our business, this could be a great time to explore what=E2=80=99s next.</p>
+<p>Looking forward to hearing your thoughts.</p>
+<p>Best regards,<br>
+<strong>Nance Roe</strong></p></div><div><div dir=3D"ltr" class=3D"gmail_si=
+gnature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><span></span><=
+span></span>Nance Roe<span></span><span></span><br><u>Recruiter,IBM</u><br>=
+<u><a href=3D"mailto:nanceroehiringibm@gmail.com" target=3D"_blank">nancero=
+ehiringibm@gmail.com</a><br></u><span style=3D"font-weight:700;color:rgb(10=
+,10,10);font-family:&quot;Google Sans&quot;,Roboto,Arial,sans-serif;font-si=
+ze:16px">1-800-426-4968,=C2=A0</span><span style=3D"font-weight:700"><span>=
+<span><a rel=3D"noopener" href=3D"https://urldefense.com/v3/__https://www.i=
+bm.com/__;!!KwNVnqRv!FoUQLDtDvd5xrLWoOutmFDocGCRiyv6utDPeh1W9EH-682bw6qrH0C=
+b2t79tV4FJ5iTBbCBRvvUxTMV8OGFKwl4dUYBVCjY$" style=3D"color:rgb(26,13,171);f=
+ont-weight:500;outline:0px" target=3D"_blank">www.ibm.com</a></span></span>=
+</span><span style=3D"color:rgb(10,10,10);font-family:&quot;Google Sans&quo=
+t;,Roboto,Arial,sans-serif;font-size:16px">.<br></span><span style=3D"color=
+:rgb(0,29,53);font-family:&quot;Google Sans&quot;,Arial,sans-serif;font-siz=
+e:16px">1 New Orchard Rd, Armonk, NY 10504, USA</span><span style=3D"color:=
+rgb(0,29,53);font-family:&quot;Google Sans&quot;,Arial,sans-serif;font-size=
+:16px"><span><br><img src=3D"https://ci3.googleusercontent.com/mail-sig/AIo=
+rK4wRxh0PuJ2FPkeIrnKmALzfOziImb_GgCT_6jzDJ8bjBtvRlq-bJGs5e4fWaR4nszI9PLjbnN=
+c59wAC"><br><span></span><span></span><span></span><span></span><br></span>=
+</span><span style=3D"color:rgb(10,10,10);font-family:&quot;Google Sans&quo=
+t;,Roboto,Arial,sans-serif;font-size:16px"></span></div></div></div><br><im=
+g width=3D"0" height=3D"0" class=3D"mailtrack-img" alt=3D"" style=3D"displa=
+y:flex" src=3D"https://mailtrack.io/trace/mail/10d563f384c5c608af4347f439d6=
+75ae8bc8f008.png?u=3D13196733"></div>
+
+--000000000000571e480642d81d06--

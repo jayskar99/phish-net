@@ -1,0 +1,101 @@
+{
+  "message_id": "<CAEwo6RGsKxoAJ24VqsamXGp6Rfc5ZP1LM-8qGO_1++9sfhBjDA@mail.gmail.com>",
+  "from": {
+    "name": "Nance Roe",
+    "email": "nanceroehiringibm@gmail.com"
+  },
+  "reply_to": {
+    "name": "",
+    "email": ""
+  },
+  "to": [
+    ""
+  ],
+  "subject": "Exciting Career Opportunities at IBM",
+  "date": "2025-11-05 12:30:20+00:00",
+  "headers": {
+    "spf_pass": false,
+    "dkim_pass": false,
+    "dmarc_pass": false,
+    "received_paths": [
+      {
+        "with": "SMTP",
+        "id": "00721157ae682-7866bca6765so32262797b3.1",
+        "for": "<samartha.suresh@tamu.edu>",
+        "date": "Wed, 05 Nov 2025 04:30:33 -0800 PST",
+        "hop": 1,
+        "date_utc": "2025-11-05T12:30:33+00:00",
+        "delay": 0
+      },
+      {
+        "from": "mail-yw1-f195.google.com mail-yw1-f195.google.com 209.85.128.195",
+        "by": "mx0a-00178102.pphosted.com PPS",
+        "with": "ESMTPS",
+        "id": "4a7yb29jpx-1 version=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 bits=128 verify=NOT",
+        "for": "<samartha.suresh@tamu.edu>",
+        "date": "Wed, 05 Nov 2025 06:30:33 -0600 CST",
+        "hop": 2,
+        "date_utc": "2025-11-05T12:30:33+00:00",
+        "delay": 0
+      },
+      {
+        "from": "pps.filterd m0169867.ppops.net 127.0.0.1",
+        "by": "mx0a-00178102.pphosted.com 8.18.1.11/8.18.1.11",
+        "with": "ESMTP",
+        "id": "5A5ApiAj1873784",
+        "for": "<samartha.suresh@tamu.edu>",
+        "date": "Wed, 5 Nov 2025 06:30:34 -0600",
+        "hop": 3,
+        "date_utc": "2025-11-05T12:30:34+00:00",
+        "delay": 1
+      },
+      {
+        "from": "mx0a-00178102.pphosted.com mx0a-00178102.pphosted.com 148.163.135.245",
+        "by": "mail-2p-in-a3.it.tamu.edu Postfix",
+        "with": "ESMTPS",
+        "id": "D9744869C6",
+        "for": "<samartha.suresh@tamu.edu>",
+        "date": "Wed, 5 Nov 2025 06:30:34 -0600 CST",
+        "hop": 4,
+        "date_utc": "2025-11-05T12:30:34+00:00",
+        "delay": 0
+      },
+      {
+        "from": "mail-2p-in-a3.it.tamu.edu mail-2p-in-a3.it.tamu.edu. 165.91.22.107",
+        "by": "mx.google.com",
+        "with": "ESMTPS",
+        "id": "6a1803df08f44-88036309a58si52348026d6.356.2025.11.05.04.30.35",
+        "for": "<samartha.suresh@email.tamu.edu> version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256",
+        "date": "Wed, 05 Nov 2025 04:30:35 -0800 PST",
+        "hop": 5,
+        "date_utc": "2025-11-05T12:30:35+00:00",
+        "delay": 1
+      },
+      {
+        "with": "SMTP",
+        "id": "k41csp1132529dye",
+        "date": "Wed, 5 Nov 2025 04:30:35 -0800 PST",
+        "hop": 6,
+        "date_utc": "2025-11-05T12:30:35+00:00",
+        "delay": 0
+      }
+    ]
+  },
+  "body": {
+    "text": "Hello,\n\nI recently came across your profile and was impressed by the experience and\nskills you’ve developed so far. At *IBM*, we’re in the midst of an exciting\nphase of innovation and growth, and we’re looking to connect with talented\nprofessionals who are ready to take their careers to the next level.\n\nBecause our opportunities span across *technology, consulting, business\nstrategy, and operations*, I’d love to learn more about your professional\ninterests. Understanding where you’d like to grow will help me identify\npositions that not only align with your skills but also support your\nlong-term aspirations.\n\nIf you don’t mind sharing, I’d be interested to know:\n\n   -\n\n   What type of role excites you most at this stage of your career?\n   -\n\n   Do you see yourself more aligned with technical, client-facing, or\n   strategic paths?\n   -\n\n   Do you have a preference for work setup (on-site, hybrid, or remote)?\n\nYour insights will help me connect you with the right teams and\nopportunities here at IBM. With the innovation and transformation happening\nacross our business, this could be a great time to explore what’s next.\n\nLooking forward to hearing your thoughts.\n\nBest regards,\n*Nance Roe*\nNance Roe\n*Recruiter,IBM*\n\n*nanceroehiringibm@gmail.com <nanceroehiringibm@gmail.com>*1-800-426-4968,\nhttps://urldefense.com/v3/__http://www.ibm.com__;!!KwNVnqRv!FoUQLDtDvd5xrLWoOutmFDocGCRiyv6utDPeh1W9EH-682bw6qrH0Cb2t79tV4FJ5iTBbCBRvvUxTMV8OGFKwl4d1unW7Ys$ .\n1 New Orchard Rd, Armonk, NY 10504, USA\n",
+    "html": "<head><!-- BaNnErBlUrFlE-HeAdEr-start -->\n<style>\n  #pfptBannerkjb2yvp { all: revert !important; display: block !important;\n    visibility: visible !important; opacity: 1 !important;\n    background-color: #d0d8dc !important;\n    max-width: none !important; max-height: none !important }\n  .pfptPrimaryButtonkjb2yvp:hover, .pfptPrimaryButtonkjb2yvp:focus {\n    background-color: #b4c1c7 !important; }\n  .pfptPrimaryButtonkjb2yvp:active {\n    background-color: #90a4ae !important; }\n  html:root, html:root>body { all: revert !important; display: block !important;\n    visibility: visible !important; opacity: 1 !important; }\n</style>\n\n<!-- BaNnErBlUrFlE-HeAdEr-end -->\n</head><!-- BaNnErBlUrFlE-BoDy-start -->\n<!-- Preheader Text : BEGIN -->\n<div style=\"display:none !important;display:none;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;opacity:0;overflow:hidden;\">\nHello, I recently came across your profile and was impressed by the experience and skills you’ve developed so far. At IBM, we’re in the midst of an exciting phase of innovation and growth, and we’re looking to connect with talented professionals</div>\n<!-- Preheader Text : END -->\n\n<!-- Email Banner : BEGIN -->\n<div style=\"display:none !important;display:none;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;opacity:0;overflow:hidden;\">ZjQcmQRYFpfptBannerStart</div>\n\n<!--[if ((ie)|(mso))]>\n  <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"padding: 0px 0px 10px 0px; direction: ltr\" lang=\"en\"><tr><td>\n    <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" style=\"padding: 0px 8px 6px 8px; width: 100%; border-radius:4px; border-top:4px solid #90a4ae;background-color:#d0d8dc;\"><tr><td valign=\"top\">\n      <table align=\"left\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" style=\"padding: 0px 8px 4px 8px; font-size: 12px; line-height: 16px\">\n\t<tr><td style=\"color:#000000; font-family: 'Arial', sans-serif; font-weight:bold; font-size:14px; line-height: 20px; direction: ltr\">\n\t  This Message Is From an External Sender\n\t</td></tr>\n\t<tr><td style=\"color:#000000; font-weight:normal; font-family: 'Arial', sans-serif; font-size:12px; direction: ltr\">\n          This message came from outside your organization.\n\t</td></tr>\n\n      </table>\n\n    </td></tr></table>\n  </td></tr></table>\n<![endif]-->\n\n<![if !((ie)|(mso))]>\n  <div dir=\"ltr\" lang=\"en\" id=\"pfptBannerkjb2yvp\" style=\"all: revert !important; display:block !important; text-align: left !important; margin: 0 0 10px 0 !important; padding:7px 16px 8px 16px !important; border-radius: 4px !important; min-width: 200px !important; background-color: #d0d8dc !important; background-color: #d0d8dc; border-top: 4px solid #90a4ae !important; border-top: 4px solid #90a4ae;\">\n    <div id=\"pfptBannerkjb2yvp\" style=\"all: unset !important; float:left !important; display:block !important; margin: 1px 0 1px 0 !important; max-width: 600px !important;\">\n      <div id=\"pfptBannerkjb2yvp\" style=\"all: unset !important; display:block !important; visibility: visible !important; background-color: #d0d8dc !important; color:#000000 !important; color:#000000; font-family: 'Arial', sans-serif !important; font-family: 'Arial', sans-serif; font-weight:bold !important; font-weight:bold; font-size:14px !important; line-height:1.29 !important; line-height:1.29\">\n\tThis Message Is From an External Sender\n      </div>\n      <div id=\"pfptBannerkjb2yvp\" style=\"all: unset !important; display:block !important; visibility: visible !important; background-color: #d0d8dc !important; color:#000000 !important; color:#000000; font-weight:normal; font-family: 'Arial', sans-serif !important; font-family: 'Arial', sans-serif; font-size:12px !important; line-height:1.5 !important; line-height:1.5; margin-top:2px !important;\">\nThis message came from outside your organization.\n      </div>\n\n    </div>\n\n    <div style=\"clear: both !important; display: block !important; visibility: hidden !important; line-height: 0 !important; font-size: 0.01px !important; height: 0px\">&nbsp;</div>\n  </div>\n<![endif]>\n\n<div style=\"display:none !important;display:none;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;opacity:0;overflow:hidden;\">ZjQcmQRYFpfptBannerEnd</div>\n<!-- Email Banner : END -->\n\n<!-- BaNnErBlUrFlE-BoDy-end -->\n<div dir=\"ltr\"><div><p>Hello,</p>\n<p>I recently came across your profile and was impressed by the experience and skills you’ve developed so far. At <strong>IBM</strong>, we’re in the midst of an exciting phase of innovation and growth, and we’re looking to connect with talented professionals who are ready to take their careers to the next level.</p>\n<p>Because our opportunities span across <strong>technology, consulting, business strategy, and operations</strong>, I’d love to learn more about your professional interests. Understanding where you’d like to grow will help me identify positions that not only align with your skills but also support your long-term aspirations.</p>\n<p>If you don’t mind sharing, I’d be interested to know:</p>\n<ul>\n<li>\n<p>What type of role excites you most at this stage of your career?</p>\n</li>\n<li>\n<p>Do you see yourself more aligned with technical, client-facing, or strategic paths?</p>\n</li>\n<li>\n<p>Do you have a preference for work setup (on-site, hybrid, or remote)?</p>\n</li>\n</ul>\n<p>Your insights will help me connect you with the right teams and opportunities here at IBM. With the innovation and transformation happening across our business, this could be a great time to explore what’s next.</p>\n<p>Looking forward to hearing your thoughts.</p>\n<p>Best regards,<br>\n<strong>Nance Roe</strong></p></div><div><div dir=\"ltr\" class=\"gmail_signature\" data-smartmail=\"gmail_signature\"><div dir=\"ltr\"><span></span><span></span>Nance Roe<span></span><span></span><br><u>Recruiter,IBM</u><br><u><a href=\"mailto:nanceroehiringibm@gmail.com\" target=\"_blank\">nanceroehiringibm@gmail.com</a><br></u><span style=\"font-weight:700;color:rgb(10,10,10);font-family:&quot;Google Sans&quot;,Roboto,Arial,sans-serif;font-size:16px\">1-800-426-4968, </span><span style=\"font-weight:700\"><span><span><a rel=\"noopener\" href=\"https://urldefense.com/v3/__https://www.ibm.com/__;!!KwNVnqRv!FoUQLDtDvd5xrLWoOutmFDocGCRiyv6utDPeh1W9EH-682bw6qrH0Cb2t79tV4FJ5iTBbCBRvvUxTMV8OGFKwl4dUYBVCjY$\" style=\"color:rgb(26,13,171);font-weight:500;outline:0px\" target=\"_blank\">www.ibm.com</a></span></span></span><span style=\"color:rgb(10,10,10);font-family:&quot;Google Sans&quot;,Roboto,Arial,sans-serif;font-size:16px\">.<br></span><span style=\"color:rgb(0,29,53);font-family:&quot;Google Sans&quot;,Arial,sans-serif;font-size:16px\">1 New Orchard Rd, Armonk, NY 10504, USA</span><span style=\"color:rgb(0,29,53);font-family:&quot;Google Sans&quot;,Arial,sans-serif;font-size:16px\"><span><br><img src=\"https://ci3.googleusercontent.com/mail-sig/AIorK4wRxh0PuJ2FPkeIrnKmALzfOziImb_GgCT_6jzDJ8bjBtvRlq-bJGs5e4fWaR4nszI9PLjbnNc59wAC\"><br><span></span><span></span><span></span><span></span><br></span></span><span style=\"color:rgb(10,10,10);font-family:&quot;Google Sans&quot;,Roboto,Arial,sans-serif;font-size:16px\"></span></div></div></div><br><img width=\"0\" height=\"0\" class=\"mailtrack-img\" alt=\"\" style=\"display:flex\" src=\"https://mailtrack.io/trace/mail/10d563f384c5c608af4347f439d675ae8bc8f008.png?u=13196733\"></div>\n"
+  },
+  "links": [
+    {
+      "display_text": "nanceroehiringibm@gmail.com",
+      "url": "mailto:nanceroehiringibm@gmail.com",
+      "domain": ""
+    },
+    {
+      "display_text": "www.ibm.com",
+      "url": "https://urldefense.com/v3/__https://www.ibm.com/__;!!KwNVnqRv!FoUQLDtDvd5xrLWoOutmFDocGCRiyv6utDPeh1W9EH-682bw6qrH0Cb2t79tV4FJ5iTBbCBRvvUxTMV8OGFKwl4dUYBVCjY$",
+      "domain": "urldefense.com"
+    }
+  ],
+  "attachments": []
+}
