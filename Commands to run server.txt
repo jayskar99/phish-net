@@ -1,0 +1,5 @@
+pip install fastapi uvicorn mail-parser python-multipart beautifulsoup4
+
+uvicorn app:app --reload
+
+http://localhost:8000/docs
