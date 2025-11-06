@@ -1,0 +1,4 @@
+based on level of threat:
+0 = safe email
+1 = suspicous email
+2 = most likely phishing email
