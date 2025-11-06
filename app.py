@@ -15,3 +15,4 @@ async def upload_eml(file: UploadFile = File(...)):
     # Parse → JSON structured email
     email_json = parse_email(temp_file_path)
     return email_json
+
