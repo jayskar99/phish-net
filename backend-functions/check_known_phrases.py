@@ -25,7 +25,6 @@ def check_known_phrases(email):
     # load from db
     cur.execute("SELECT phrase, notes FROM suspicious_phrases")
     phrase_rows = cur.fetchall()
-    test_data = [row["phrase"].lower() for row in phrase_rows]
 
     # initalize variables
     score = 0 # defaults to low suspicion
@@ -35,8 +34,19 @@ def check_known_phrases(email):
 
     # count phrases
     phrase_flags = 0 
-    for phrase in test_data:
-        phrase_flags += message.count(phrase)
+    for row in phrase_rows:
+        phrase = row["phrase"].lower()
+        db_note = row["notes"]
+
+        count = message.count(phrase)
+        if count > 0:
+            phrase_flags += count
+
+            # build note text
+            if db_note:
+                notes.append(f"matched phrase '{phrase}' ({db_note}) x{count}")
+            else:
+                notes.append(f"matched phrase '{phrase}' x{count}")
     
     # any phrase raises suspicion, 3 instances gives cause it is likely
     score = 2 if phrase_flags > 3 else 1 if phrase_flags > 1 else 0
