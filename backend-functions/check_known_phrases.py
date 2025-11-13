@@ -39,4 +39,7 @@ def check_known_phrases(email):
         phrase_flags += message.count(phrase)
     
     # any phrase raises suspicion, 3 instances gives cause it is likely
-    return 2 if phrase_flags > 3 else 1 if phrase_flags > 1 else 0
+    score = 2 if phrase_flags > 3 else 1 if phrase_flags > 1 else 0
+
+    conn.close()
+    return (score, notes)
