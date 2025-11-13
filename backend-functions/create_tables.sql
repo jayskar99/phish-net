@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS domains (
 -- foreign key in the domains to quickly filter out wider ranges of emails
 CREATE TABLE IF NOT EXISTS emails (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL UNIQUE,
     domain_id INTEGER,
     reputation_score INTEGER DEFAULT 2,
     FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE SET NULL

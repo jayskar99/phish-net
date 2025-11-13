@@ -7,7 +7,7 @@ def connect_db():
     conn.execute("PRAGMA foreign_keys = ON;")
     return conn
 
-def check_email(email: Dict[str, Any]) -> Tuple[int, List[str]]:
+def check_email(email):
     """
     email: dict of email data
     returns: (score, notes)
