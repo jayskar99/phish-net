@@ -28,7 +28,7 @@ def check_known_phrases(email):
     test_data = [row["phrase"].lower() for row in phrase_rows]
 
     # initalize variables
-    score = 1 # defaults to medium suspicion
+    score = 0 # defaults to low suspicion
     notes = []
     body = email.get("body", {})
     message = body.get("text", "").replace("\n", " ").lower()
