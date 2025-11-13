@@ -46,3 +46,6 @@ def check_email(email: Dict[str, Any]) -> Tuple[int, List[str]]:
 
     conn.close()
     return (score, notes)
+
+''' add funtionality for checking one or two characters off of a known safe email 
+consider using intersection, dict of transformations, etc. '''
