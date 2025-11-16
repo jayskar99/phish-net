@@ -32,7 +32,10 @@ def train_check_content():
     global labels
     global int_labels
     global X
+    
+    # Credits to Miltchev, R. (Creator), Rangelov, D. (Creator), Evgeni, G. (Creator) (29 Aug 2024). Phishing validation emails dataset. Zenodo. 10.5281/zenodo.13474745
     df = pd.read_csv("Phishing_validation_emails.csv")
+
     texts = df["Email Text"].values
     labels = df["Email Type"].values
     labels = np.array(labels)
