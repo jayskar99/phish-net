@@ -9,7 +9,6 @@ app = FastAPI(title="PhishNet Plugin Backend")
 
 @app.post("/upload_eml")
 async def upload_eml(file: UploadFile = File(...)):
-    
     # Save file temporarily
     temp_file_path = None
     try:
@@ -33,6 +32,7 @@ async def upload_eml(file: UploadFile = File(...)):
             except Exception:
                 pass
 
+
 @app.get("/fetch_gmail")
 async def fetch_gmail_endpoint(max_messages: int = 20):
     try:
@@ -40,16 +40,8 @@ async def fetch_gmail_endpoint(max_messages: int = 20):
         return {"count": len(emails), "emails": emails}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
+
 
 @app.get("/")
 async def root():
     return {"message": "PhishNet backend is running", "endpoints": ["/upload_eml", "/fetch_gmail"]}
-
-<<<<<<< HEAD
-=======
-    # Parse → JSON structured email
-    email_json = parse_email(temp_file_path)
-    return email_json
-
->>>>>>> 0a0d8ca8e07d35b7aa0188780499b6566f119646
