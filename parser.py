@@ -8,10 +8,18 @@ def extract_links_from_html(html):
     for tag in soup.find_all('a', href=True):
         url = tag['href']
         domain = urlparse(url).netloc
+        display = tag.get_text(strip=True)
+
+        # NEW: mismatch flag (display text vs actual URL)
+        mismatch = False
+        if display and display != url:
+            mismatch = True
+
         links.append({
-            "display_text": tag.get_text(strip=True),
+            "display_text": display,
             "url": url,
-            "domain": domain
+            "domain": domain,
+            "mismatch": mismatch   # <-- Added field
         })
     return links
 
