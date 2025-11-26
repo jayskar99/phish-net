@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Phish Net Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        min-width: 200px;
+        margin: 0;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.1rem;
+        margin: 0 0 0.25rem 0;
+      }
+      h2 {
+        font-size: 1rem;
+        margin: 0.75rem 0 0.25rem 0;
+      }
+      button {
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 4px;
+        background: #663399;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      button:active {
+        background: #53287a;
+      }
+      #status {
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: #333;
+      }
+      #authStatus {
+        margin-top: 0.4rem;
+        font-size: 0.85rem;
+        color: #333;
+      }
+      .section {
+        padding: 0.75rem 0 0.5rem 0;
+        border-top: 1px solid #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Phish Net Demo</h1>
+    <p style="font-size: 0.9rem;">Click the button to send a Hello World message.</p>
+    <button id="helloBtn">Say Hello</button>
+    <div id="status">Waiting for action…</div>
+
+    <div class="section">
+      <h2>Gmail sign-in</h2>
+      <p style="font-size: 0.9rem;">Sign in to allow Gmail API access for parsing.</p>
+      <button id="signinBtn">Sign in to Gmail</button>
+      <div id="authStatus">Not signed in</div>
+    </div>
+
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>
