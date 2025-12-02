@@ -57,7 +57,7 @@ def train_check_content():
     ga.run()
     print('Training finished')
     best_weights = ga.best_solution()[0]
-    
+    ga.save("genetic_trained_phish")
 
     return best_weights
 
@@ -65,8 +65,12 @@ def check_content(text):
     '''
     Classifies the ctext entry as a Phising or Safe Email
     '''
-    v = embedder.encode([text])
-    return "Phishing Email" if v @ best_weights >= 0 else "Safe Email"
+    try:
+        v = embedder.encode([text])
+        best_weights = pygad.load("genetic_trained_phish").best_solution()[0]
+        return "Phishing Email" if v @ best_weights >= 0 else "Safe Email"
+    except:
+        return "Failure to load genetic model"
 
 def fitness_func(instance, solution, idx):
     '''
@@ -78,7 +82,7 @@ def fitness_func(instance, solution, idx):
     logits = X @ w
     preds = (logits >= 0).astype(int)
     return np.mean(preds == int_labels)
-
+'''
 train_check_content()
 num_correct = 0
 num_total = len(texts)
@@ -88,3 +92,4 @@ for i in range(num_total):
     num_correct += 1 if result == labels[i] else 0
 
 print(f'Correctly classified {num_correct} / {num_total} ({num_correct/num_total}) emails')
+'''
